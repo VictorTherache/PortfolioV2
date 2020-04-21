@@ -1,0 +1,64 @@
+.btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #65c3ba;
+        box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1);
+        border-radius: 5px;
+        height: 6vh;
+        color: white;
+        text-decoration: none;
+        font-family: Lato, Arial, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: background .3s, transform .3s, box-shadow .3s;
+         will-change: transform;
+         
+    &:hover {
+       background: darken(#65c3ba,10%);
+       box-shadow: 0px 0px 83px -18px rgba(0,0,0,0.11);
+       text-decoration: none;
+       transform: stranslate3d(0, -2px, 0);
+       color: white;
+    }
+     &:active {
+       box-shadow: 0 1vh 1vh 0 rgba(0,0,0,0.1);
+       // transform: translate3d(0, 1px, 0);
+    }
+        
+}
+@media only screen and (min-width: 350px){
+    .btn {
+        width: 7rem;
+        font-size: 9px;
+        height: 2.2rem;
+    }
+    .vlogo {
+        width: 12vw;
+    }
+}
+
+@media only screen and (min-width:771px) and (max-width:1040px){
+    .btn {
+        width: 7rem;
+        font-size: 9px;
+        height: 2.4rem;
+        margin-right: 3.4rem;
+    }
+    .vlogo {
+        margin-left: 3.4rem;
+        width: 8vw;
+    }
+    }
+@media only screen and (min-width: 1041px){
+    .btn {
+        width: 8rem;
+        font-size: 13px;
+        height: 2.6rem;
+        margin-right: 7rem;
+    }
+    .vlogo {
+        width: 7vw;
+        margin-left: 10rem;
+    }
+}

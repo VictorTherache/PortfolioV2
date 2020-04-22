@@ -1,0 +1,66 @@
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 2.1rem;
+    margin-top: 7rem;
+    text-align: center;
+    padding: 0px 1.7rem;
+    font-family: 'Baloo Thambi 2', cursive;
+    font-weight: 900;
+}
+.subtitle {
+    font-family: 'Baloo 2', cursive;
+    padding: 0px 2.2rem;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 1rem;
+    line-height: 1.8rem;
+}
+.heart-png {
+    height: 1.2rem;
+    margin: 0px 0.2rem;
+}
+.avatar-png {
+    width: 10.2rem;
+}
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+}
+.dessin-png {
+    width: 22.2rem;
+    width: 22.2rem;
+}
+.dessin {
+    display: flex;
+    justify-content: center;
+    margin-top: 5.8rem;
+}
+@media screen and (min-width: 388px) {
+    .dessin {
+        margin-top: 8rem;
+    }
+}
+@media screen and (min-width: 703px) {
+    .dessin {
+        margin-top: 8rem;
+    }
+    .dessin-png {
+        width: 35.2rem;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .avatar-png {
+        width: 12.2rem;
+    }
+    .avatar-container {
+        margin-top: 4.5rem;
+    }
+    .dessin {
+        margin-top: 5rem;
+    }
+    .dessin-png {
+        width: 35.2rem;
+    }
+}

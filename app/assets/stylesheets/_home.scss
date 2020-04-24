@@ -70,7 +70,7 @@ body {
 
 .banniere {
     background-color: #65c3ba;
-    height: 35rem;
+    height: 30rem;
 }
 .btitle {
     color: white;
@@ -87,24 +87,34 @@ body {
 }
 .grid {
     background-color: white;
-    height: 30rem;
-    margin: -10rem 1rem;
+    height: 35.5rem;
+    margin: -12rem 1rem;
     /* margin: 1rem; */
-    border-radius: 15px;
+    /* border-radius: 15px; */
+    /* border-top: 1px solid; */
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-radius-top: 8rem;
+    /* border-right: 1px solid; */
 }
 .icone {    
-    width: 5rem;
-    margin-top: 2rem;
+    width: 3.5rem;
+    margin-top: 3rem;
 }
 .pencilbox {
+    border: 1px solid #DCDCDC;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-radius: 16px;
+
 }
 .ptitle{
     font-size: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     font-family: 'Baloo Tamma 2', cursive;
 }
 .psubtitle {
@@ -126,4 +136,22 @@ body {
     padding: 0rem;
     text-align: center;
     line-height: 2.5rem;
+    margin-bottom: 3.5rem;
+
+}
+.frontbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: none !important;
+    border: 1px solid #DCDCDC;  
+}
+.backbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #DCDCDC;
+    border-top: none;  
 }

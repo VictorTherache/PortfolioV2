@@ -154,4 +154,38 @@ body {
     align-items: center;
     border: 1px solid #DCDCDC;
     border-top: none;  
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+.workcontainer {
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.wtitle {
+    font-family: 'Baloo 2', cursive;
+    font-weight: 700;
+    margin-top: 7rem;
+}
+.worksub {
+    color: black;
+    margin-top: 0.5rem;
+    line-height: 1.8rem;
+}
+.boutton {
+    margin: 1rem;
+    width: 300px; 
+    height: 200px; 
+    border: 0; 
+    cursor: pointer; 
+    font-size: 2rem;     
+    background-image: url("scrapapa.png");
+    background-size: cover;
+    border-radius: 13px;
+
+}
+.bcontainer {
+    display: flex;
+    margin: 1rem;
 }

@@ -88,7 +88,7 @@ body {
 .grid {
     background-color: white;
     height: 35.5rem;
-    margin: -12rem 1rem;
+    margin: -7.5rem 1rem;
     /* margin: 1rem; */
     /* border-radius: 15px; */
     /* border-top: 1px solid; */
@@ -96,12 +96,18 @@ body {
     border-top-left-radius: 1rem;
     border-radius-top: 8rem;
     /* border-right: 1px solid; */
+    display: grid;
+    grid-template-areas: "backbox"
+                         "frontbox"
+                         "pencilbox"
+                         "workcontainer";
 }
 .icone {    
     width: 3.5rem;
     margin-top: 3rem;
 }
 .pencilbox {
+    grid-area: pencilbox;
     border: 1px solid #DCDCDC;
     display: flex;
     flex-direction: column;
@@ -140,6 +146,7 @@ body {
 
 }
 .frontbox {
+    grid-area: frontbox;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,6 +155,7 @@ body {
     border: 1px solid #DCDCDC;  
 }
 .backbox{
+    grid-area: backbox;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,6 +170,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    grid-area: workcontainer;
 }
 .wtitle {
     font-family: 'Baloo 2', cursive;
@@ -189,3 +198,28 @@ body {
     display: flex;
     margin: 1rem;
 }
+
+@media screen and (min-width: 1200px) {
+    .grid {
+        grid-template-areas: "frontbox pencilbox backbox"
+                             "workcontainer workcontainer workcontainer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 44rem;
+        border: 1px solid #DCDCDC;
+    }    
+    .pencilbox {
+        border-radius: 0px;
+        border-bottom: none;
+        border-top: none;
+        
+    }
+    .backbox {
+        border-radius: 0px;
+        border: none;
+    }
+    .frontbox {
+        border: none;
+    }
+                    }

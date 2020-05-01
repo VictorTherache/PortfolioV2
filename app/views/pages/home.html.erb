@@ -67,8 +67,16 @@
   <h1 class="wtitle">My recent work </h1>
   <h5 class="bsubtitle worksub">Here are a few projects I've worked on this year, make sure to check them out.</h5>
   <div class="bcontainer">
-    <button class="boutton"> </button>
-    <button class="boutton"> </button>
+ <%= link_to "http://www.google.com", :class => "bouton" do %>
+ <div class="btn-textbox">
+  <span>A compost project made with a few friends of mine.</span>
+  </div>
+<% end %>
+ <%= link_to "http://www.google.com", :class => "bouton2" do %>
+ <div class="btn-textbox">
+  <span>An AirBnB clone, on the theme of space.</span>
+  </div>
+<% end %>
   </div>
   </div>
 </div>

@@ -127,7 +127,8 @@ body {
     grid-template-areas: "backbox"
                          "frontbox"
                          "pencilbox"
-                         "workcontainer";
+                         "workcontainer"
+                         "testimonials";
 }
 .icone {    
     width: 3.5rem;
@@ -261,7 +262,8 @@ body {
 @media screen and (min-width: 1200px) {
     .grid {
         grid-template-areas: "frontbox pencilbox backbox"
-                             "workcontainer workcontainer workcontainer";
+                             "workcontainer workcontainer workcontainer"
+                             "testimonials testimonials testimonials";
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -295,5 +297,27 @@ span {
     align-items: center;
     color: white;
     font-family: 'Baloo 2', cursive;
-
+}
+.testimonials {
+    margin-top: -7rem;
+    grid-area: testimonials;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.goodguy {
+    border-radius: 50%;
+}
+.testisubtitle {
+    margin-top: 1.5rem;
+    padding: 0rem 6rem;
+}
+.suberic {
+    font-family: 'Baloo 2', cursive;
+}
+.eric {
+    font-weight: 600;
+    margin-top: 0.4rem;
+    font-family: 'Baloo 2', cursive;
 }

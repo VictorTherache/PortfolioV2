@@ -29,16 +29,31 @@
 }
 @media only screen and (min-width: 350px){
     .btn {
-        width: 7rem;
-        font-size: 9px;
-        height: 2.2rem;
+        width: 11rem;
+        font-size: 17px;
+        height: 4.2rem;
     }
     .vlogo {
-        width: 12vw;
+        width: 22vw;
+        height: 5rem;
+    }
+    .navbar {
+        padding-top: 2rem;
     }
 }
+@media only screen and (min-width: 500px) {
+    .vlogo {
+        width: 17vw;
+        height: 5.5rem ;
+    }
+    .btn {
+        width: 11rem;
+        font-size: 15px;
+        height: 3.6rem;    
+    }    
+}
 
-@media only screen and (min-width:771px) and (max-width:1040px){
+@media only screen and (min-width:703px) and (max-width:1040px){
     .btn {
         width: 7rem;
         font-size: 9px;
@@ -48,6 +63,10 @@
     .vlogo {
         margin-left: 3.4rem;
         width: 8vw;
+        height: 3.8rem !important;
+    }
+    .navbar {
+        width: 100vw;
     }
     }
 @media only screen and (min-width: 1041px){

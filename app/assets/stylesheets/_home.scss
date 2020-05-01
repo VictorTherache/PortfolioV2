@@ -40,9 +40,30 @@ body {
     justify-content: center;
     margin-top: 5.8rem;
 }
+@media screen and (min-width: 350px) {
+    .dessin {
+        margin-top: 8rem;
+    }
+    .vlogo {
+        height: 5rem;
+    }
+    .navbar {
+        width: 45rem;
+    }
+    body {
+        width: 45rem;
+    }
+}
 @media screen and (min-width: 388px) {
     .dessin {
         margin-top: 8rem;
+    }
+    .vlogo {
+        height: 5rem;
+    }
+
+    body {
+        width: 45rem;
     }
 }
 @media screen and (min-width: 703px) {
@@ -51,6 +72,12 @@ body {
     }
     .dessin-png {
         width: 35.2rem;
+    }
+    body {
+        width: 100vw;
+    }
+    .navbar {
+        width: 100vw;
     }
 }
 @media screen and (min-width: 1300px) {
@@ -223,3 +250,5 @@ body {
         border: none;
     }
                     }
+
+

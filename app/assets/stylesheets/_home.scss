@@ -1,5 +1,5 @@
 body {
-    height: auto;
+    height: 588vh;
 }
 .title {
     display: flex;
@@ -320,4 +320,26 @@ span {
     font-weight: 600;
     margin-top: 0.4rem;
     font-family: 'Baloo 2', cursive;
+}
+.green-container {
+    background-color: #65c3ba;
+    height: 30rem;
+    margin-top: 172rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.vlogo-white {
+    height: 7rem;
+    margin-top: 3rem;
+}
+.footertext {
+    font-weight: 600;
+    font-size: 1.6rem;
+    /* margin: 2rem auto; */
+    max-width: 19rem;
+    opacity: 0.7;
+    margin-top: 1rem;
+    font-family: 'Baloo 2', cursive;
+    text-align: center;
 }

@@ -8,17 +8,21 @@
 
 # should add seeds here
 
-# <div id="foo\bar"></div>
-# <div id="foo:bar"></div>
-
-# <script>
-#   console.log('#foo\bar');               // "#fooar" (\b is the backspace control character)
-#   document.querySelector('#foo\bar');    // Does not match anything
-
-#   console.log('#foo\\bar');              // "#foo\bar"
-#   console.log('#foo\\\\bar');            // "#foo\\bar"
-#   document.querySelector('#foo\\\\bar'); // Match the first div
-
-#   document.querySelector('#foo:bar');    // Does not match anything
-#   document.querySelector('#foo\\:bar');  // Match the second div
-# </script>
+# # Warning: Insecure writable dir (workaround)
+# -------------------------------------------
+# Some things cause ruby to interact with the
+# environment in ways that cause a message to be
+# generated:
+#
+#   warning: Insecure world writable dir
+# 
+# In my case, I have directories containing
+# development tools that, for reasons unknown,
+# have a world-writable parent directory. It's
+# not something I can change, so I have to find
+# ways to suppress the warning.
+# 
+#   `ls *.rb`     # No warning for this
+#   `ls`          # Generates the warning
+#   `eval ""; ls` # Workaround to kill the warning
+# 

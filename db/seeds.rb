@@ -26,12 +26,12 @@
 #   `ls`          # Generates the warning
 #   `eval ""; ls` # Workaround to kill the warning
 # 
-# def alternating_characters?(s)
-#     type = [/[aeiou]/, /[^aeiou]/].cycle
-#     if s.start_with?(/[^aeiou]/)
-#       type.next
-#     end
-#     s.chars.all? { |ch| ch.match?(type.next) }
-#   end
-#   alternating_characters?("ateciyu")
+def alternating_characters?(s)
+    type = [/[aeiou]/, /[^aeiou]/].cycle
+    if s.start_with?(/[^aeiou]/)
+      type.next
+    end
+    s.chars.all? { |ch| ch.match?(type.next) }
+  end
+  alternating_characters?("ateciyu")
   

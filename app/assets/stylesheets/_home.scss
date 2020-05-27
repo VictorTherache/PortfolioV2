@@ -353,3 +353,32 @@ span {
     width: 12rem;
     margin-right: 0rem;
 }
+// .carousel-control-prev-icon,
+// .carousel-control-next-icon {
+//   height: 100px;
+//   width: 100px;
+//   outline: black;
+//   background-size: 100%, 100%;
+//   border-radius: 50%;
+//   border: 1px solid black;
+//   background-image: none;
+// }
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #65c3ba;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #65c3ba;
+}
+.carousel-control-next {
+    right: -40px;
+}
+.carousel-control-prev {
+    left: -40px;
+}

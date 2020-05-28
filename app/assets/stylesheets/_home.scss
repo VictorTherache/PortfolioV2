@@ -329,6 +329,8 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    padding: 7vw;
 }
 .vlogo-white {
     height: 7rem;
@@ -395,4 +397,41 @@ span {
 .keyboard {
     width: 1.2vw;
     margin-left: 0.5vw;
+}
+.big_box {
+    // background-color: black;
+    width: 100vw;
+    display: flex;
+    height: 34vh;
+    position: absolute;
+    /* bottom: 71vw; */
+    top: 169vw;
+    // opacity: 0.4;
+    z-index: 1;
+    justify-content: center;
+}
+.start_a_project_box {
+    display: flex;
+    align-items: center;
+    width: 44vw;
+    background-color: #1E453E;
+    height: 26vh;
+    margin-top: 9vh;
+    border-radius: 16px;
+}
+#start_project {
+    color: white;
+    font-size: 1.5vw;
+    padding-left: 58px;
+    width: 18vw;
+}
+#start_p {
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+}
+.btn-dark {
+    margin-right: 71px;
+    width: 10vw;
+
 }

@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     font-size: 2.1rem;
-    margin-top: 7rem;
+    margin-top: 6rem;
     text-align: center;
     padding: 0px 1.7rem;
     font-family: 'Baloo Thambi 2', cursive;
@@ -59,7 +59,7 @@ body {
         margin-top: 8rem;
     }
     .vlogo {
-        height: 5rem;
+        width: 4vw;
     }
 
     body {
@@ -106,16 +106,16 @@ body {
     text-align: center;
 }
 .bsubtitle {
-    padding: 0rem 1.2rem;
+    padding: 0rem 18vw;
     text-align: center;
     word-break: break-word;
     color: white;
     font-weight: 300;
 }
 .grid {
+    margin: -9vw 21vw;
     background-color: white;
-    height: 35.5rem;
-    margin: -7.5rem 1rem;
+    height: 45.3rem;
     /* margin: 1rem; */
     /* border-radius: 15px; */
     /* border-top: 1px solid; */
@@ -268,7 +268,7 @@ body {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        height: 44rem;
+        height: 45.3rem;
         border: 1px solid #DCDCDC;
     }    
     .pencilbox {
@@ -325,7 +325,7 @@ span {
 .green-container {
     background-color: #65c3ba;
     height: 30rem;
-    margin-top: 100rem;
+    margin-top: 99rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -350,8 +350,10 @@ span {
     margin-bottom: 4vh;
 }
 .btn-secondary {
-    width: 12rem;
+    width: 6.5vw;
     margin-right: 0rem;
+    text-transform: capitalize;
+    font-size: 0.7vw;
 }
 // .carousel-control-prev-icon,
 // .carousel-control-next-icon {
@@ -381,4 +383,16 @@ span {
 }
 .carousel-control-prev {
     left: -40px;
+}
+.leave_a_review {
+    display: flex;
+    flex-direction: row;
+    .bsubtitle {
+        padding-right: 2vw;
+        padding-left: 0rem;
+    }
+}
+.keyboard {
+    width: 1.2vw;
+    margin-left: 0.5vw;
 }

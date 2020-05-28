@@ -90,34 +90,35 @@
   </div>
 <div class="testimonials">
   <h1 class="wtitle">Testimonials</h1>
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
+  <h5 class= "bsubtitle worksub">People who I've working with said : </h5>  
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <%= image_tag "Review4.png", class: 'd-block w-100' %>
+        <%= image_tag "Review4.png", class: 'd-block w-100' %>
     </div>
     <div class="carousel-item">
-      <%= image_tag "review5.png", class: 'd-block w-100' %>
+        <%= image_tag "review5.png", class: 'd-block w-100' %>
     </div>
     <div class="carousel-item">
-      <%= image_tag "Review6.png", class: 'd-block w-100' %>
+        <%= image_tag "Review6.png", class: 'd-block w-100' %>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
 </div>
-  <%# <h5 class= "bsubtitle worksub">Nobody has left a comment for the moment... <%= image_tag "sad.png", class: 'emoji' %> </h5>  
-  <button type="button" class="btn btn-secondary">Feel free to leave a review</button>
+<div class="leave_a_review">
+  <h5 class= "bsubtitle worksub">You can leave a review by clicking   
+ </h5> 
+  <button type="button" class="btn btn-secondary">here<%= image_tag "keyboard.svg", class: 'keyboard' %>
+</button>
+</div>
+<i class="fas fa-keyboard"></i> 
   <%# <%= image_tag "hulk.jpeg", class: 'icone goodguy' %> 
   <%# <h2 class="subtitle testisubtitle">“Victor's crushing it ”</h2>
   <h4 class="eric">The Hulk</h4> 

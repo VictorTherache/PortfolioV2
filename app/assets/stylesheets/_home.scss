@@ -44,9 +44,9 @@ body {
     .dessin {
         margin-top: 8rem;
     }
-    .vlogo {
-        height: 5rem;
-    }
+    // .vlogo {
+    //     height: 5rem;
+    // }
     .navbar {
         width: 45rem;
     }
@@ -59,7 +59,7 @@ body {
         margin-top: 8rem;
     }
     .vlogo {
-        width: 4vw;
+        width: 20vw;
     }
 
     body {
@@ -260,6 +260,36 @@ body {
     margin: 1rem;
 }
 
+
+
+@media screen and (max-width: 1000px) {
+    .grid {
+        margin: -13vw 2vw;
+        background-color: white;
+        height: -31.7rem;
+        /* margin: 1rem; */
+        /* border-radius: 15px; */
+        /* border-top: 1px solid; */
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-radius-top: 8rem;
+        /* border-right: 1px solid; */
+        display: grid;
+        grid-template-areas:
+            "backbox"
+            "frontbox"
+            "pencilbox"
+            "workcontainer"
+            "testimonials";
+    }
+    .psubtitle {
+        font-weight: 300;
+        font-size: 1.2rem;
+        padding: 0.6rem 8.2rem;
+        text-align: center;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .grid {
         grid-template-areas: "frontbox pencilbox backbox"
@@ -284,6 +314,9 @@ body {
     }
     .frontbox {
         border: none;
+    }
+    .green-container {
+        margin-top: 82rem;
     }
 }
 span {
@@ -327,7 +360,7 @@ span {
     color: white;
     background-color: #65c3ba;
     height: 22rem;
-    margin-top: 82rem;
+    margin-top: 153rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -400,18 +433,7 @@ span {
     width: 1.2vw;
     margin-left: 0.5vw;
 }
-.big_box {
-    // background-color: black;
-    width: 100vw;
-    display: flex;
-    height: 34vh;
-    position: absolute;
-    /* bottom: 71vw; */
-    top: 169vw;
-    // opacity: 0.4;
-    z-index: 1;
-    justify-content: center;
-}
+
 .start_a_project_box {
     display: flex;
     align-items: center;
@@ -497,3 +519,4 @@ span {
     color: white;
     background: #0e76a8;
   }
+

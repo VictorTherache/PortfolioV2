@@ -1,5 +1,5 @@
 body {
-    height: 588vh;
+    height: 635vh;
 }
 .title {
     display: flex;
@@ -265,6 +265,7 @@ body {
         grid-template-areas: "frontbox pencilbox backbox"
                              "workcontainer workcontainer workcontainer"
                              "testimonials testimonials testimonials";
+                            //  "start_projtect start_project start_project";
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -323,14 +324,15 @@ span {
     font-family: 'Baloo 2', cursive;
 }
 .green-container {
+    color: white;
     background-color: #65c3ba;
-    height: 30rem;
-    margin-top: 99rem;
+    height: 22rem;
+    margin-top: 82rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding: 7vw;
+    padding: 6vw;
 }
 .vlogo-white {
     height: 7rem;
@@ -341,7 +343,7 @@ span {
     font-size: 1.6rem;
     /* margin: 2rem auto; */
     max-width: 19rem;
-    opacity: 0.7;
+    // opacity: 0.7;
     margin-top: 1rem;
     font-family: 'Baloo 2', cursive;
     text-align: center;
@@ -418,12 +420,15 @@ span {
     height: 26vh;
     margin-top: 9vh;
     border-radius: 16px;
+    position: absolute;
 }
-#start_project {
-    color: white;
-    font-size: 1.5vw;
-    padding-left: 58px;
-    width: 18vw;
+.start_a_project {
+    height: 24vh;
+    // background-color: black;
+    grid-area: start_project;
+    margin-top: 32vh;
+    z-index: 1;
+    border-radius: 11px;
 }
 #start_p {
     font-size: 14px;
@@ -433,5 +438,62 @@ span {
 .btn-dark {
     margin-right: 71px;
     width: 10vw;
-
 }
+.green2 {
+    background-color: #1e453e;
+}
+.green3 {
+    // margin-top: 6vh;
+}
+.footer_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -22vh;
+}
+
+.vlogo-white2{
+    margin-top: 3rem;
+    width: 5vw;
+    align-items: center;
+    // margin-top: -22vh;
+}
+.icon_box {
+    margin-top: 4vh;
+}
+.fa {
+    padding: 15px;
+    font-size: 20px;
+    width: 49px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-left: 1.3vw;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-github {
+    background: #24292e;
+    color: white;
+  }
+  .fa-linkedin {
+    color: white;
+    background: #0e76a8;
+  }

@@ -648,5 +648,13 @@ span {
     padding-left: 8px;
 }
 .btn_send {
-    padding-left: 31px;
+    padding-left: 33px !important;
+}
+textarea {
+    overflow: auto;
+    resize: vertical;
+    background: #f1f1f1;
+    padding: 17px;
+    border: none;
+    color: #838383;
 }

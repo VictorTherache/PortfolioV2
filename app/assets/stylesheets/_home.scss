@@ -491,6 +491,7 @@ span {
     text-decoration: none;
     border-radius: 50%;
     margin-left: 1.3vw;
+    color: white !important;
   }
   
   /* Add a hover effect if you want */
@@ -572,9 +573,10 @@ span {
 
 /* Add styles to the form container */
 .form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
+    max-width: 500px;
+    padding: 22px;
+    padding-bottom: 1rem;
+    background-color: white;
 }
 
 /* Full-width input fields */
@@ -594,7 +596,7 @@ span {
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: #4CAF50;
+  background-color: #65c3ba;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -612,4 +614,47 @@ span {
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
+}
+
+#txtarea {
+    color: #838383;
+    background-color: #f1f1f1;
+    border: none;
+    padding: 12px;
+
+}
+.form_title {
+    font-size: xx-large;
+    font-family: 'Baloo Thambi 2', cursive;
+    font-weight: bold;
+}
+#form_sub {
+    font-family: 'Baloo Thambi 2', cursive;
+}
+.enveloppe {
+    width: 1.5vw;
+    margin-left: 0.4vw;
+} 
+
+.fa-paper-plane {
+    margin-left: -2px;
+    padding: 0px;
+}
+.cross {
+    width: 18px;
+    margin-left: 10px;
+}
+.cancel {
+    padding-left: 8px;
+}
+.btn_send {
+    padding-left: 33px !important;
+}
+textarea {
+    overflow: auto;
+    resize: vertical;
+    background: #f1f1f1;
+    padding: 17px;
+    border: none;
+    color: #838383;
 }

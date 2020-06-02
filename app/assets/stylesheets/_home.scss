@@ -491,6 +491,7 @@ span {
     text-decoration: none;
     border-radius: 50%;
     margin-left: 1.3vw;
+    color: white !important;
   }
   
   /* Add a hover effect if you want */
@@ -634,3 +635,18 @@ span {
     width: 1.5vw;
     margin-left: 0.4vw;
 } 
+
+.fa-paper-plane {
+    margin-left: -2px;
+    padding: 0px;
+}
+.cross {
+    width: 18px;
+    margin-left: 10px;
+}
+.cancel {
+    padding-left: 8px;
+}
+.btn_send {
+    padding-left: 31px;
+}

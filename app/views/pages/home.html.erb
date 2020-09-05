@@ -86,16 +86,27 @@
   <h1 class="wtitle">My recent work </h1>
   <h5 class="bsubtitle worksub">Here are a few projects I've worked on this year, make sure to check them out.</h5>
   <div class="bcontainer">
- <%= link_to "https://scrapitapp.herokuapp.com/", :class => "bouton" do %>
+  <div class="scrapit_container">
+ <%= link_to "https://scrapitapp.herokuapp.com/", :class => "bouton", target: '_blank' do %>
  <div class="btn-textbox">
   <span>A compost project made with a few friends of mine.</span>
   </div>
 <% end %>
- <%= link_to "https://myspace-bnb.herokuapp.com/", :class => "bouton2" do %>
+  </div>
+  <div class="space_bnb_container">
+ <%= link_to "https://myspace-bnb.herokuapp.com/", :class => "bouton2", target: '_blank' do %>
  <div class="btn-textbox">
   <span>An AirBnB clone, on the theme of space.</span>
   </div>
 <% end %>
+  </div>
+  <div class="asco_container">
+ <%= link_to "https://asco-factory.com/", :class => "bouton3",target: '_blank' do %>
+ <div class="btn-textbox2">
+  <span>A canopy workshop made by french designers</span>
+  </div>
+<% end %>
+  </div>
   </div>
   </div>
 <div class="testimonials">

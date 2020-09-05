@@ -215,6 +215,7 @@ body {
 }
 .bouton {
     display: block;
+    // grid-area: 
     text-decoration: none !important;
     margin: 1rem;
     width: 300px; 
@@ -236,7 +237,13 @@ body {
 .bouton2:hover {
     box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1), inset 0 0 0 100px rgba(0,0,0,.7);
 }
+.bouton3:hover {
+    box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1), inset 0 0 0 100px rgba(0,0,0,.7);
+}
 .bouton2:hover span {
+    display: block;
+}
+.bouton3:hover span {
     display: block;
 }
 .hover-btn-text span {
@@ -256,10 +263,26 @@ body {
     border-radius: 13px;
     box-shadow:inset 0 0 0 3px rgba(0,0,0,.04), inset 0 0 0 2px rgba(255,255,255,.3);
 }
-.bcontainer {
-    display: flex;
+.bouton3 {
+    display: block;
+    text-decoration: none !important;
     margin: 1rem;
+    width: 300px; 
+    height: 200px; 
+    border: 0; 
+    cursor: pointer; 
+    font-size: 2rem;     
+    background-image: url("workshop4");
+    background-size: cover;
+    border-radius: 13px;
+    box-shadow:inset 0 0 0 3px rgba(0,0,0,.04), inset 0 0 0 2px rgba(255,255,255,.3);
 }
+.bcontainer {
+    display: grid;
+    margin: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
 
 
 
@@ -317,7 +340,7 @@ body {
         border: none;
     }
     .green-container {
-        margin-top: 82rem;
+        margin-top: 171rem;
     }
 }
 span {
@@ -334,8 +357,17 @@ span {
     color: white;
     font-family: 'Baloo 2', cursive;
 }
+.btn-textbox2 {
+    display: flex;
+    padding: 25px 19px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Baloo 2', cursive;
+}
+
 .testimonials {
-    margin-top: -7rem;
+    margin-top: 5rem;
     grid-area: testimonials;
     height: 40rem;
     display: flex;
@@ -361,7 +393,7 @@ span {
     color: white;
     background-color: #65c3ba;
     height: 30rem;
-    margin-top: 80rem;
+    margin-top: 91rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -533,7 +565,7 @@ span {
 
 @media screen and (max-width: 1200px) {
 .green-container {
-    margin-top: 151rem;
+    margin-top: 174rem;
 }  
 }
 @media screen and (max-width: 1100px) {

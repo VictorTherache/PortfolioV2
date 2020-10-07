@@ -59,7 +59,7 @@ body {
         margin-top: 8rem;
     }
     .vlogo {
-        width: 20vw;
+        width: 97px;
     }
 
     body {
@@ -240,10 +240,16 @@ body {
 .bouton3:hover {
     box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1), inset 0 0 0 100px rgba(0,0,0,.7);
 }
+.bouton4:hover {
+    box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1), inset 0 0 0 100px rgba(0,0,0,.7);
+}
 .bouton2:hover span {
     display: block;
 }
 .bouton3:hover span {
+    display: block;
+}
+.bouton4:hover span {
     display: block;
 }
 .hover-btn-text span {
@@ -273,6 +279,20 @@ body {
     cursor: pointer; 
     font-size: 2rem;     
     background-image: url("workshop4");
+    background-size: cover;
+    border-radius: 13px;
+    box-shadow:inset 0 0 0 3px rgba(0,0,0,.04), inset 0 0 0 2px rgba(255,255,255,.3);
+}
+.bouton4 {
+    display: block;
+    text-decoration: none !important;
+    margin: 1rem;
+    width: 300px; 
+    height: 200px; 
+    border: 0; 
+    cursor: pointer; 
+    font-size: 2rem;     
+    background-image: url("appmeteo");
     background-size: cover;
     border-radius: 13px;
     box-shadow:inset 0 0 0 3px rgba(0,0,0,.04), inset 0 0 0 2px rgba(255,255,255,.3);
@@ -518,7 +538,7 @@ span {
 
 .vlogo-white2{
     margin-top: 3rem;
-    width: 5vw;
+    width: 97px;
     align-items: center;
     // margin-top: -22vh;
 }
@@ -699,4 +719,7 @@ textarea {
     padding: 17px;
     border: none;
     color: #838383;
+}
+.appMeteoAndoid_container {
+
 }

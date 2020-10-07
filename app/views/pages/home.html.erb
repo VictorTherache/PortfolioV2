@@ -1,41 +1,37 @@
-
 <nav class="navbar navbar-light bg-light">
   <%=image_tag("vlogo.png", :class => "vlogo")%>
   <span class="navbar-brand mb-0 h1"> </span>
   <button class="btn" onclick="openForm()">Contact me</button>
 </nav>
-
-  <h1 class="title"> Designer, Front-end & Back-end Developer</h1>
+<h1 class="title"> Designer, Front-end & Back-end Developer</h1>
 <div class="form-popup" id="myForm">
   <form  method='POST' action="https://script.google.com/macros/s/AKfycbyMmQMHvAkRFqlJQRafIbK-LxZh4iZSsF0GFMmUQA/exec" class="form-container" id="gform" data-email="from_email@example.com">
     <h1 class= "form_title">Send me a mail <%= image_tag "enveloppe.svg", class: 'enveloppe' %>
- </h1>
+    </h1>
     <label for="name" id="form_sub"><b>Your email address :</b></label>
     <input type="text" placeholder="exemple@gmail.com" name="name" id='name' required>
     <label for="email" id="form_sub"><b>Your message :</b></label>
-  <textarea name="message" rows="8" id="message" cols="58" placeholder="Hi Victor..."></textarea>
-        <button class="btn btn_send">
-            &nbsp;Send <i class="fa fa-paper-plane"></i>
-        </button>    
-        <button type="button" class="btn cancel" onclick="closeForm()">Close <%= image_tag "cross.png", class: 'cross'%></button>
+    <textarea name="message" rows="8" id="message" cols="58" placeholder="Hi Victor..."></textarea>
+    <button class="btn btn_send">
+      &nbsp;Send <i class="fa fa-paper-plane"></i>
+    </button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close <%= image_tag "cross.png", class: 'cross'%></button>
   </form>
-  
 </div>
-
-
-  <h2 class="subtitle">My name is Victor Therache, I build awesome websites, and I <br>freakin <%= image_tag "pxheart.png", class: 'heart-png' %> it </h2>
-  <div class="avatar-container">
-
+<h2 class="subtitle">My name is Victor Therache, I build awesome websites, and I <br>
+  freakin <%= image_tag "pxheart.png", class: 'heart-png' %> it </h2>
+<div class="avatar-container">
   <%= image_tag "victor_rond.png", class: 'avatar-png' %>
-  </div>
-    <div class="dessin animated animated bounceInUp ">
-    <%= image_tag "dessing.png", class: 'dessin-png' %>
+</div>
+<div class="dessin animated animated bounceInUp ">
+  <%= image_tag "dessing.png", class: 'dessin-png' %>
 </div>
 <div class="banniere">
-<h3 class ="btitle">Hi I'm Victor, nice to meet you</h3>
-<h5 class="bsubtitle">I am passionate about <strong>programming</strong> and especially <strong>web development</strong> since 3 years.<br> I am always learning and working on fun projects on GitHub.
-      In 2020, I joined the "Wagon" coding bootcamp, a wonderfull experience were I learned in-depth all the knowledge I needed to become a worthy developer.
-      I am currently working as a freelance developer using various technologies like Ruby, Javascript, SQL or HTML/CSS</h5>
+  <h3 class ="btitle">Hi I'm Victor, nice to meet you</h3>
+  <h5 class="bsubtitle">I am passionate about <strong>programming</strong> and especially <strong>web development</strong> since 3 years.<br>
+     I am always learning and working on fun projects on GitHub.
+    In 2020, I joined the "Wagon" coding bootcamp, a wonderfull experience were I learned in-depth all the knowledge I needed to become a worthy developer.
+    I am currently working as a freelance developer using various technologies like Ruby, Javascript, SQL or HTML/CSS</h5>
 </div>
 <div class="grid">
   <div class="pencilbox col1">
@@ -54,20 +50,20 @@
   </div>
   <div class="frontbox col2">
     <%= image_tag "front.png", class: 'icone' %>
-      <h4 class="ptitle">Front-end</h4>
+    <h4 class="ptitle">Front-end</h4>
     <h5 class ="psubtitle">I use the latest technologies to have a powerfull and understandable source code.</h5>
     <h4 class= "pworkon">Languages I use : </h4>
     <h5 class="psubtitle">HTML, CSS, Javascript, React, Wordpress</h5>
     <h4 class= "pworkon ptool">Front-end tools : </h4>
-      <ul style="list-style-type:none;" class="skill">
-        <li>Bootstrap </li>
-        <li>React</li>
-        <li>Flexbox</li>
-        <li>CSS grid</li>
-        <li>Ui kits</li>
-        <li>Github</li>
-      </ul>
-  </div>  
+    <ul style="list-style-type:none;" class="skill">
+      <li>Bootstrap </li>
+      <li>React</li>
+      <li>Flexbox</li>
+      <li>CSS grid</li>
+      <li>Ui kits</li>
+      <li>Github</li>
+    </ul>
+  </div>
   <div class="backbox col3">
     <%= image_tag "database.png", class: 'icone' %>
     <h4 class="ptitle">Back-end</h4>
@@ -81,91 +77,93 @@
       <li>Heroku</li>
       <li>Github</li>
     </ul>
-  </div> 
+  </div>
   <div class="workcontainer">
-  <h1 class="wtitle">My recent work </h1>
-  <h5 class="bsubtitle worksub">Here are a few projects I've worked on this year, make sure to check them out.</h5>
-  <div class="bcontainer">
-  <div class="scrapit_container">
- <%= link_to "https://scrapitapp.herokuapp.com/", :class => "bouton", target: '_blank' do %>
- <div class="btn-textbox">
-  <span>A compost project made with a few friends of mine.</span>
-  </div>
-<% end %>
-  </div>
-  <div class="space_bnb_container">
- <%= link_to "https://myspace-bnb.herokuapp.com/", :class => "bouton2", target: '_blank' do %>
- <div class="btn-textbox">
-  <span>An AirBnB clone, on the theme of space.</span>
-  </div>
-<% end %>
-  </div>
-  <div class="asco_container">
- <%= link_to "https://asco-factory.com/", :class => "bouton3",target: '_blank' do %>
- <div class="btn-textbox2">
-  <span>A canopy workshop made by french designers</span>
-  </div>
-<% end %>
-  </div>
-  </div>
-  </div>
-<div class="testimonials">
-  <h1 class="wtitle">Testimonials</h1>
-  <h5 class= "bsubtitle worksub">People who I've working with said : </h5>  
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-        <%= image_tag "Review4.png", class: 'd-block w-100' %>
-    </div>
-    <div class="carousel-item">
-        <%= image_tag "review5.png", class: 'd-block w-100' %>
-    </div>
-    <div class="carousel-item">
-        <%= image_tag "Review6.png", class: 'd-block w-100' %>
+    <h1 class="wtitle">My recent work </h1>
+    <h5 class="bsubtitle worksub">Here are a few projects I've worked on this year, make sure to check them out.</h5>
+    <div class="bcontainer">
+      <div class="scrapit_container">
+        <%= link_to "https://scrapitapp.herokuapp.com/", :class => "bouton", target: '_blank' do %>
+          <div class="btn-textbox">
+            <span>A compost project made with a few friends of mine.</span>
+          </div>
+        <% end %>
+      </div>
+      <div class="space_bnb_container">
+        <%= link_to "https://myspace-bnb.herokuapp.com/", :class => "bouton2", target: '_blank' do %>
+          <div class="btn-textbox">
+            <span>An AirBnB clone, on the theme of space.</span>
+          </div>
+        <% end %>
+      </div>
+      <div class="asco_container">
+        <%= link_to "https://asco-factory.com/", :class => "bouton3",target: '_blank' do %>
+          <div class="btn-textbox2">
+            <span>A canopy workshop made by french designers</span>
+          </div>
+        <% end %>
+      </div>
+      <div class="appMeteoAndoid_container">
+        <%= link_to "https://appetize.io/app/ckzge0qfv4awbc8gd0m4xwv744?device=nexus5&scale=75&orientation=portrait&osVersion=8.1", :class => "bouton4",target: '_blank' do %>
+          <div class="btn-textbox">
+            <span>A simple weather app, made with React Native</span>
+          </div>
+        <% end %>
+      </div>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-<i class="fas fa-keyboard"></i> 
-</div>
+  <div class="testimonials">
+    <h1 class="wtitle">Testimonials</h1>
+    <h5 class= "bsubtitle worksub">People who I've working with said : </h5>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <%= image_tag "Review4.png", class: 'd-block w-100' %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "review5.png", class: 'd-block w-100' %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "Review6.png", class: 'd-block w-100' %>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <i class="fas fa-keyboard"></i>
+  </div>
   <div class="start_a_project"></div>
-
 </div>
-
 </div>
 <div class="green-container green3 ">
-<div class="leave_a_review">
-  <h5 class= "bsubtitle worksub">Interested in working together ? You should send me an email. I'll buy the coffee.  
- </h5> 
-  <button type="button" class="btn btn-secondary" onclick="openForm()">Let's do this
-</button>
-</div>
-<div class="footer_box">
-  <%= image_tag "vlogowhite.png", class:'vlogo-white2' %>
-  <h5 class='footertext'>Living, learning, & leveling up one day at a time.</h5>
-  <div class="icon_box">
-
-<a  target="_blank" href="https://github.com/VictorTherache/" class="fa fa-github"></a>
-<a target="_blank"  href="https://www.linkedin.com/in/victor-therache-5221a015a/" class="fa fa-linkedin"></a>
-
-</div>
+  <div class="leave_a_review">
+    <h5 class= "bsubtitle worksub">Interested in working together ? You should send me an email. I'll buy the coffee.  
+    </h5>
+    <button type="button" class="btn btn-secondary" onclick="openForm()">Let's do this
+    </button>
   </div>
-  <script> 
-  function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}</script>  
+  <div class="footer_box">
+    <%= image_tag "vlogowhite.png", class:'vlogo-white2' %>
+    <h5 class='footertext'>Living, learning, & leveling up one day at a time.</h5>
+    <div class="icon_box">
+      <a  target="_blank" href="https://github.com/VictorTherache/" class="fa fa-github"></a>
+      <a target="_blank"  href="https://www.linkedin.com/in/victor-therache-5221a015a/" class="fa fa-linkedin"></a>
+    </div>
+  </div>
+  <script>
+    function openForm() {
+    document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+    }
+  </script>
 </div>
-
 <%# strgram %>

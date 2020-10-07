@@ -8,11 +8,11 @@ body {
     margin-top: 6rem;
     text-align: center;
     padding: 0px 1.7rem;
-    font-family: 'Baloo Thambi 2', cursive;
+    font-family: "Baloo Thambi 2", cursive;
     font-weight: 900;
 }
 .subtitle {
-    font-family: 'Baloo 2', cursive;
+    font-family: "Baloo 2", cursive;
     padding: 0px 2.2rem;
     text-align: center;
     font-size: 1.2em;
@@ -39,6 +39,31 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 5.8rem;
+}
+
+@media screen and (max-width: 700px) {
+    .bcontainer {
+        grid-template-columns: 1fr !important;
+    }
+    .testimonials {
+        margin-top: 42rem !important;
+    }
+    .bouton {
+        margin-bottom: 4rem !important;
+        margin-top: 4rem !important;
+    }
+    .bouton2 {
+        margin-bottom: 4rem !important;
+    }
+    .bouton3 {
+        margin-bottom: 4rem !important;
+    }
+    .bouton4 {
+        margin-bottom: 4rem !important;
+    }
+    .green-container {
+        margin-top: 198rem !important;
+    }
 }
 @media screen and (min-width: 350px) {
     .dessin {
@@ -68,7 +93,7 @@ body {
 }
 @media screen and (min-width: 703px) {
     .dessin {
-        margin-top: 8rem;
+        margin-top: 5rem;
     }
     .dessin-png {
         width: 35.2rem;
@@ -101,7 +126,7 @@ body {
 }
 .btitle {
     color: white;
-    font-family: 'Baloo Tamma 2', cursive;
+    font-family: "Baloo Tamma 2", cursive;
     padding: 4.5rem 1.2rem 0.5rem;
     text-align: center;
 }
@@ -124,21 +149,22 @@ body {
     border-radius-top: 8rem;
     /* border-right: 1px solid; */
     display: grid;
-    grid-template-areas: "backbox"
-                         "frontbox"
-                         "pencilbox"
-                         "workcontainer"
-                         "testimonials";
+    grid-template-areas:
+        "backbox"
+        "frontbox"
+        "pencilbox"
+        "workcontainer"
+        "testimonials";
 }
-.icone {    
+.icone {
     width: 3.5rem;
     margin-top: 3rem;
 }
 
-.ptitle{
+.ptitle {
     font-size: 1.5rem;
     margin-top: 1.5rem;
-    font-family: 'Baloo Tamma 2', cursive;
+    font-family: "Baloo Tamma 2", cursive;
 }
 .psubtitle {
     font-weight: 300;
@@ -160,7 +186,6 @@ body {
     text-align: center;
     line-height: 2.5rem;
     margin-bottom: 3.5rem;
-
 }
 .frontbox {
     grid-area: frontbox;
@@ -169,11 +194,11 @@ body {
     justify-content: center;
     align-items: center;
     border-top: none !important;
-    border: 1px solid #DCDCDC;  
+    border: 1px solid #dcdcdc;
 }
 .pencilbox {
     grid-area: pencilbox;
-    height: 45.3rem !important;
+    height: 38rem !important;
     /* border: 1px solid #DCDCDC; */
     display: flex;
     flex-direction: column;
@@ -181,17 +206,17 @@ body {
     border-bottom-left-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
     border-radius: 16px;
-    border-right: 1px solid #DCDCDC;
-    border-left: 1px solid #DCDCDC;
+    border-right: 1px solid #dcdcdc;
+    border-left: 1px solid #dcdcdc;
 }
-.backbox{
+.backbox {
     grid-area: backbox;
     display: flex;
     flex-direction: column;
     // justify-content: center;
     align-items: center;
-    border: 1px solid #DCDCDC;
-    border-top: none;  
+    border: 1px solid #dcdcdc;
+    border-top: none;
     border-bottom-left-radius: 14px;
     border-bottom-right-radius: 14px;
 }
@@ -204,7 +229,7 @@ body {
     grid-area: workcontainer;
 }
 .wtitle {
-    font-family: 'Baloo 2', cursive;
+    font-family: "Baloo 2", cursive;
     font-weight: 700;
     margin-top: 7rem;
 }
@@ -215,33 +240,33 @@ body {
 }
 .bouton {
     display: block;
-    // grid-area: 
+    // grid-area:
     text-decoration: none !important;
     margin: 1rem;
-    width: 300px; 
-    height: 200px; 
-    border: 0; 
-    cursor: pointer; 
-    font-size: 2rem;     
+    width: 300px;
+    height: 200px;
+    border: 0;
+    cursor: pointer;
+    font-size: 2rem;
     background-image: url("scrapapa.png"); // Bug : not working on production
     background-size: cover;
     border-radius: 13px;
-    box-shadow:inset 0 0 0 3px rgba(0,0,0,.04), inset 0 0 0 2px rgba(255,255,255,.3);
+    box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.04), inset 0 0 0 2px rgba(255, 255, 255, 0.3);
 }
 .bouton:hover {
-    box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1), inset 0 0 0 100px rgba(0,0,0,.7);
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1), inset 0 0 0 100px rgba(0, 0, 0, 0.7);
 }
 .bouton:hover span {
     display: block;
 }
 .bouton2:hover {
-    box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1), inset 0 0 0 100px rgba(0,0,0,.7);
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1), inset 0 0 0 100px rgba(0, 0, 0, 0.7);
 }
 .bouton3:hover {
-    box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1), inset 0 0 0 100px rgba(0,0,0,.7);
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1), inset 0 0 0 100px rgba(0, 0, 0, 0.7);
 }
 .bouton4:hover {
-    box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1), inset 0 0 0 100px rgba(0,0,0,.7);
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1), inset 0 0 0 100px rgba(0, 0, 0, 0.7);
 }
 .bouton2:hover span {
     display: block;
@@ -259,52 +284,49 @@ body {
     display: block;
     text-decoration: none !important;
     margin: 1rem;
-    width: 300px; 
-    height: 200px; 
-    border: 0; 
-    cursor: pointer; 
-    font-size: 2rem;     
+    width: 300px;
+    height: 200px;
+    border: 0;
+    cursor: pointer;
+    font-size: 2rem;
     background-image: url("space3");
     background-size: cover;
     border-radius: 13px;
-    box-shadow:inset 0 0 0 3px rgba(0,0,0,.04), inset 0 0 0 2px rgba(255,255,255,.3);
+    box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.04), inset 0 0 0 2px rgba(255, 255, 255, 0.3);
 }
 .bouton3 {
     display: block;
     text-decoration: none !important;
     margin: 1rem;
-    width: 300px; 
-    height: 200px; 
-    border: 0; 
-    cursor: pointer; 
-    font-size: 2rem;     
+    width: 300px;
+    height: 200px;
+    border: 0;
+    cursor: pointer;
+    font-size: 2rem;
     background-image: url("workshop4");
     background-size: cover;
     border-radius: 13px;
-    box-shadow:inset 0 0 0 3px rgba(0,0,0,.04), inset 0 0 0 2px rgba(255,255,255,.3);
+    box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.04), inset 0 0 0 2px rgba(255, 255, 255, 0.3);
 }
 .bouton4 {
     display: block;
     text-decoration: none !important;
     margin: 1rem;
-    width: 300px; 
-    height: 200px; 
-    border: 0; 
-    cursor: pointer; 
-    font-size: 2rem;     
+    width: 300px;
+    height: 200px;
+    border: 0;
+    cursor: pointer;
+    font-size: 2rem;
     background-image: url("appmeteo");
     background-size: cover;
     border-radius: 13px;
-    box-shadow:inset 0 0 0 3px rgba(0,0,0,.04), inset 0 0 0 2px rgba(255,255,255,.3);
+    box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.04), inset 0 0 0 2px rgba(255, 255, 255, 0.3);
 }
 .bcontainer {
     display: grid;
     margin: 1rem;
     grid-template-columns: 1fr 1fr;
 }
-
-
-
 
 @media screen and (max-width: 1000px) {
     .grid {
@@ -336,21 +358,21 @@ body {
 
 @media screen and (min-width: 1200px) {
     .grid {
-        grid-template-areas: "frontbox pencilbox backbox"
-                             "workcontainer workcontainer workcontainer"
-                             "testimonials testimonials testimonials";
-                            //  "start_projtect start_project start_project";
+        grid-template-areas:
+            "frontbox pencilbox backbox"
+            "workcontainer workcontainer workcontainer"
+            "testimonials testimonials testimonials";
+        //  "start_projtect start_project start_project";
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         height: 45.3rem;
-        border: 1px solid #DCDCDC;
-    }    
+        border: 1px solid #dcdcdc;
+    }
     .pencilbox {
         border-radius: 0px;
         border-bottom: none;
         border-top: none;
-        
     }
     .backbox {
         border-radius: 0px;
@@ -375,7 +397,7 @@ span {
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: 'Baloo 2', cursive;
+    font-family: "Baloo 2", cursive;
 }
 .btn-textbox2 {
     display: flex;
@@ -383,7 +405,7 @@ span {
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: 'Baloo 2', cursive;
+    font-family: "Baloo 2", cursive;
 }
 
 .testimonials {
@@ -402,12 +424,12 @@ span {
     padding: 0rem 6rem;
 }
 .suberic {
-    font-family: 'Baloo 2', cursive;
+    font-family: "Baloo 2", cursive;
 }
 .eric {
     font-weight: 600;
     margin-top: 0.4rem;
-    font-family: 'Baloo 2', cursive;
+    font-family: "Baloo 2", cursive;
 }
 .green-container {
     color: white;
@@ -431,7 +453,7 @@ span {
     max-width: 19rem;
     // opacity: 0.7;
     margin-top: 1rem;
-    font-family: 'Baloo 2', cursive;
+    font-family: "Baloo 2", cursive;
     text-align: center;
 }
 .emoji {
@@ -459,17 +481,16 @@ span {
 //   background-image: none;
 // }
 
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  color: #65c3ba;
+.carousel-control-next-icon:after {
+    content: ">";
+    font-size: 55px;
+    color: #65c3ba;
 }
 
 .carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: #65c3ba;
+    content: "<";
+    font-size: 55px;
+    color: #65c3ba;
 }
 .carousel-control-next {
     right: -40px;
@@ -481,14 +502,14 @@ span {
     margin-top: -11rem;
     display: flex;
     flex-direction: row;
-    background-color: #1E453E;
+    background-color: #1e453e;
     padding: 3rem;
     border-radius: 7px;
     .bsubtitle {
         padding-right: 2vw;
         padding-left: 0rem;
         color: white;
-        font-family: 'Baloo 2', cursive;
+        font-family: "Baloo 2", cursive;
     }
 }
 .keyboard {
@@ -500,7 +521,7 @@ span {
     display: flex;
     align-items: center;
     width: 44vw;
-    background-color: #1E453E;
+    background-color: #1e453e;
     height: 26vh;
     margin-top: 9vh;
     border-radius: 16px;
@@ -536,7 +557,7 @@ span {
     // margin-top: -8rem;
 }
 
-.vlogo-white2{
+.vlogo-white2 {
     margin-top: 3rem;
     width: 97px;
     align-items: center;
@@ -554,39 +575,39 @@ span {
     border-radius: 50%;
     margin-left: 1.3vw;
     color: white !important;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
     opacity: 0.7;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-  .fa-facebook {
-    background: #3B5998;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3b5998;
     color: white;
-  }
-  
-  /* Twitter */
-  .fa-twitter {
-    background: #55ACEE;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55acee;
     color: white;
-  }
-  .fa-github {
+}
+.fa-github {
     background: #24292e;
     color: white;
-  }
-  .fa-linkedin {
+}
+.fa-linkedin {
     color: white;
     background: #0e76a8;
-  }
+}
 
 @media screen and (max-width: 1200px) {
-.green-container {
-    margin-top: 174rem;
-}  
+    .green-container {
+        margin-top: 174rem;
+    }
 }
 @media screen and (max-width: 1100px) {
     .btn-secondary {
@@ -598,39 +619,38 @@ span {
         font-size: 1.5vw;
         width: 10.5vw;
     }
-}   
+}
 @media screen and (max-width: 700px) {
     .btn-secondary {
         width: 14.5vw;
         height: 8vh;
         font-size: 2vw;
     }
-    
-}   
+}
 // {box-sizing: border-box;}
 
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
 }
 
 /* The popup form - hidden by default */
 .form-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
 }
 
 /* Add styles to the form container */
@@ -642,40 +662,43 @@ span {
 }
 
 /* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
 }
 
 /* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+    background-color: #ddd;
+    outline: none;
 }
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: #65c3ba;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
+    background-color: #65c3ba;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
 }
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-  background-color: red;
+    background-color: red;
 }
 
 /* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
 }
 
 #txtarea {
@@ -683,20 +706,19 @@ span {
     background-color: #f1f1f1;
     border: none;
     padding: 12px;
-
 }
 .form_title {
     font-size: xx-large;
-    font-family: 'Baloo Thambi 2', cursive;
+    font-family: "Baloo Thambi 2", cursive;
     font-weight: bold;
 }
 #form_sub {
-    font-family: 'Baloo Thambi 2', cursive;
+    font-family: "Baloo Thambi 2", cursive;
 }
 .enveloppe {
     width: 1.5vw;
     margin-left: 0.4vw;
-} 
+}
 
 .fa-paper-plane {
     margin-left: -2px;
@@ -721,5 +743,4 @@ textarea {
     color: #838383;
 }
 .appMeteoAndoid_container {
-
 }
